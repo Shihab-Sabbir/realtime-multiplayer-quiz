@@ -1,12 +1,16 @@
 'use client'
 
+import { useEffect } from 'react'
 import { CreateRoom } from '../components/create-room'
 import { JoinRoom } from '../components/join-room'
 
 export default function HomePage() {
-      sessionStorage.removeItem("playerName");
-      sessionStorage.removeItem("teamId");
-      sessionStorage.removeItem("isLeader");
+  useEffect(() => {
+    sessionStorage.removeItem('playerName')
+    sessionStorage.removeItem('teamId')
+    sessionStorage.removeItem('isLeader')
+  }, [])
+
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       <main className="container mx-auto px-4 py-8">
@@ -21,4 +25,3 @@ export default function HomePage() {
     </div>
   )
 }
-

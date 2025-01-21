@@ -75,7 +75,7 @@ export function JoinRoom() {
   };
 
   return (
-    <Card className="bg-gray-800 border-gray-700">
+    <Card className="bg-gray-800 text-gray-100 border-gray-700">
       <CardHeader>
         <CardTitle className="text-2xl">Join Room</CardTitle>
       </CardHeader>

@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden h-screen bg-gradient-to-b from-gray-900 to-gray-800`}
+        className={`${geistSans.variable} ${geistMono.variable} text-white antialiased overflow-hidden h-screen bg-gradient-to-b from-gray-900 to-gray-800`}
       >
         <SocketProvider>{children}</SocketProvider>
       </body>
