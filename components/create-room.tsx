@@ -28,7 +28,7 @@ export function CreateRoom() {
     try {
       setIsLoading(true);
 
-      const response = await fetch("${process.env.NEXT_PUBLIC_BACKEND_URL}api/v1/rooms", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}api/v1/rooms`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
